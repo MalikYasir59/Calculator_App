@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10131A"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/display_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners"
+        android:gravity="bottom|end"
+
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/calculation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="end"
+            android:textColor="@android:color/white"
+            android:textSize="60dp" />
+
+        <TextView
+            android:id="@+id/result_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="bottom"
+
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/yourGridLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#10131A"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button
+            android:id="@+id/button_ac"
+            style="@style/CalculatorButton"
+            android:layout_width="90dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="10dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:backgroundTint="#583e5b"
+            android:text="AC"
+
+            />
+
+        <Button
+            android:id="@+id/button37"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="4"
+            android:backgroundTint="#40475a"
+            android:layout_column="3"
+            android:layout_marginLeft="10dp"
+            android:text="+" />
+
+
+        <Button
+            android:id="@+id/button24"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:backgroundTint="#2a4678"
+
+            android:layout_marginLeft="10dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button25"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#2a4678"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button26"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:backgroundTint="#2a4678"
+            android:layout_marginLeft="10dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button28"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:backgroundTint="#2a4678"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="." />
+
+        <Button
+            android:id="@+id/button29"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#40475a"
+
+            android:text="%" />
+
+        <Button
+            android:id="@+id/button30"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="2"
+            android:backgroundTint="#2a4678"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button31"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#2a4678"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button32"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:backgroundTint="#2a4678"
+            android:layout_marginLeft="10dp"
+            android:text="3" />
+
+        <ImageButton
+            android:id="@+id/button33"
+            style="@style/CalculatorButton"
+            android:layout_width="80dp"
+            android:layout_height="73dp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/imagebutton"
+            android:contentDescription="remove"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete" />
+
+
+        <Button
+            android:id="@+id/button34"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#40475a"
+            android:text="÷" />
+
+
+        <Button
+            android:id="@+id/button35"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:backgroundTint="#40475a"
+            android:layout_marginLeft="10dp"
+            android:text="×" />
+
+
+        <Button
+            android:id="@+id/button36"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:backgroundTint="#40475a"
+            android:layout_marginLeft="10dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button38"
+            style="@style/CalculatorButton"
+          android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:backgroundTint="#40475a"
+            android:layout_marginLeft="10dp"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/button45"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:backgroundTint="#2a4678"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button46"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:backgroundTint="#2a4678"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button47"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="4"
+            android:backgroundTint="#2a4678"
+            android:layout_column="0"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button48"
+            style="@style/CalculatorButton"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:backgroundTint="#2a4678"
+
+            android:text="0" />
+
+
+    </GridLayout>
+
+</LinearLayout>
