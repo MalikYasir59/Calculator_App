@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String buttonText = b.getText().toString();
 
-        if (buttonText.matches("\\d")) { // If the button text is a number
+        if (buttonText.matches("\\d")) {
             currentNumber += buttonText;
             currentExpression += buttonText;
             resultTextView.setText(currentNumber);
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
-            // Map the Enter key to the "=" button functionality
+
             Button equalsButton = findViewById(R.id.button38);
             equalsButton.performClick();
             return true;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 
 class ExpressionEvaluator {
-    // This method evaluates a mathematical expression
+
     public double evaluate(String expression) throws Exception {
         return evaluatePostfix(convertToPostfix(expression));
     }
